@@ -1,0 +1,26 @@
+<html lang="pt-br">
+    <head>
+        <title> Exercise 05 - Multiple "if" statements </title>
+        <script>
+            var carClassification = 110;
+            var classificationStatus = "";
+
+            if(carClassification >= 70){
+                classificationStatus = "Car qualified = Exceptional index";
+                document.write(classificationStatus);
+            }else if(carClassification >= 55){
+                classificationStatus = "Car qualified = Average approval";
+                document.write(classificationStatus);
+            }else if((carClassification >= 40)&&((carClassification <= 50))){
+                classificationStatus = "Car disqualified = Review needed!";
+                document.write(classificationStatus);
+            }else if((carClassification >=1)&&(carClassification <=39)){
+                classificationStatus = "Car disqualified = Insufficient classification";
+                document.write(classificationStatus);    
+            }else{
+                classificationStatus = "Error! The analysis index is null. Please, re-check this information";
+                document.write(classificationStatus);
+            }
+        </script>
+    </head>
+</html>
