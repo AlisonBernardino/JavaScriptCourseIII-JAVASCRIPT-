@@ -1,0 +1,50 @@
+<html lang="pt-br">
+    <head>
+        <title> Exercise 01 - The famous "Hello World"</title>
+        <meta charset="utf-8"/>
+        <script>
+            //Step 01 - Typing method
+            document.write("Test - All set (document.write)<br>Well done!");
+
+            // Step 02 - Creating a(various) variable(s)
+            // var || let || const || only, the variable name
+            var specificVar, userName, userAge, userBattery, generalVar;
+            
+            // To start the var with null value 
+            specificVar = null;
+            userName = "Richard";
+            userAge = 35;
+            userBattery = 95;
+            generalVar = userName + userAge + userBattery;
+
+            // To break the presentation line
+            document.write("<br>");
+
+            // To print the variable value
+            document.write("Outputting the variables separatedly");
+            document.write("<br>");
+            document.write(specificVar);          
+            document.write("<br>");
+            document.write(userName);
+            document.write("<br>");
+            document.write(userAge);
+            document.write("<br>");
+            document.write(userBattery);
+            document.write("<br>");
+
+            // To reunite all variables
+            document.write("To show all variables inside a single variable");
+            document.write("<br>");
+            document.write(generalVar);
+            document.write("<br>");
+
+            // To concatenate the variables output
+            document.write("Outputting the variables with concatenation");
+            document.write("<br>");
+            document.write(specificVar + "<br>" + userName + "<br>" + userAge + "<br>" + userBattery);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

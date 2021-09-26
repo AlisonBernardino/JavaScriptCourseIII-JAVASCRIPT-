@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        Exercise 03 = Prompt &&
+    </title>
+    <script>
+        var textA = "Alison, ";
+        var textB = "a coder.";
+        const lineBreak = "\n";
+
+        // To use the "prompt" and collect the input for a variable
+        // The first "" argument is used to post the message
+        // The second "" argument is the text field default text
+        var userName = prompt("Please, type the user name: ","Insert your name here...");
+
+        // Show the var value - Form 01
+        document.write(userName);
+
+        // Show the var value - Form 02
+        alert(userName);
+        
+        var userNickname = prompt("Insert the user nickname","Insert the nickname here...");
+        
+        // To use the "confirm" command
+        var confirmation = confirm(userNickname + ", do you wish to continue?");
+        alert(confirmation);
+
+        // If the "Ok" button is pressed, the "true" statement will be printed on the screen
+        document.write(confirmation);
+        
+    </script>
+
+</head>
+
+</html>
