@@ -1,0 +1,55 @@
+<html lang="pt-br">
+
+<head>
+    <title> Exercise 05 - Multiple "if" statements </title>
+    <script>
+        // Using multiple "if" statements
+        var carClassification = 110;
+        var classificationStatus = "";
+
+        if (carClassification >= 70) {
+            classificationStatus = "Car qualified = Exceptional index";
+        } else if (carClassification >= 55) {
+            classificationStatus = "Car qualified = Average approval";
+        } else if ((carClassification >= 40) && ((carClassification <= 50))) {
+            classificationStatus = "Car disqualified = Review needed!";
+        } else if ((carClassification >= 1) && (carClassification <= 39)) {
+            classificationStatus = "Car disqualified = Insufficient classification";
+        } else {
+            classificationStatus = "Error! The analysis index is null. Please, re-check this information";
+        }
+        document.write(classificationStatus);
+
+        // Using nested "if" statements
+        var technologyRating = 1000;
+        var ratingStatus = "";
+
+        if (technologyRating >= 650) {
+            ratingStatus = "Technology approved = ";
+            if (technologyRating >= 935) {
+                if (technologyRating == 1000) {
+                    ratingStatus += "Maximum index reached";
+                } else {
+                    ratingStatus += "Exceptional index";
+                }
+            } else {
+                ratingStatus += "Normal index"
+            }
+        } else if (technologyRating >= 500) {
+            ratingStatus = "Technology disapproved = "
+            ratingStatus += "Re-check required";
+        } else {
+            ratingStatus = "Technology disapproved = "
+            if ((technologyRating >= 1) && (technologyRating <= 499)) {
+                ratingStatus += "Index insufficience";
+            } else {
+                ratingStatus += "Error! The technology rating is null! Please, re-insert this information to proceed";
+            }
+        }
+
+        document.write(ratingStatus);
+
+    </script>
+</head>
+
+</html>
