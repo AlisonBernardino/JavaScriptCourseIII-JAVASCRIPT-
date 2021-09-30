@@ -1,0 +1,56 @@
+<html lang="pt-br">
+
+<head>
+    <title> Exercise 06 - Command block && SwitchCase</title>
+    <meta charset="utf-8">
+
+    <script>
+
+        // Command block
+        var sampleNumber = 25;
+        var systemAnswer = "";
+        if (sampleNumber > 20) {
+            systemAnswer = "The value is larger than 20. ";
+        } else {
+            systemAnswer = "The value is smaller than 20. ";
+        }
+
+        document.write(systemAnswer);
+
+        // To use the "switch-case" block
+        var finalResult;
+
+        finalResult = "";
+        informative = "Congratulations! ";
+        totalTime = 181;
+
+        if(totalTime <= 60){
+            finalResult = "Gold";
+        }else if((totalTime >= 61)&&(totalTime <=120)){
+            finalResult = "Silver";
+        }else if((totalTime >=121)&&(totalTime <=180)){
+            finalResult = "Bronze";
+        }else{
+            finalResult = "Completion certification";
+        }
+
+        switch (finalResult) {
+            case "Gold":
+                informative += "The GOLDEN medal was achieved!" + " Total time = " + totalTime + " seconds.";
+                break;
+            case "Silver":
+                informative += "The SILVER medal was achieved!" + " Total time = " + totalTime + " seconds.";
+                break;
+            case "Bronze":
+                informative += "The BRONZE medal was achieved!" + " Total time = " + totalTime + " seconds.";
+                break;
+            default:
+                informative = "Error! No medal detected. Please, insert the information again.";
+        }
+
+        document.write(informative);
+
+    </script>
+</head>
+
+</html>

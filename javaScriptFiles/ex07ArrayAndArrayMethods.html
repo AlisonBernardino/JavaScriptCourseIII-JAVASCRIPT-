@@ -1,0 +1,114 @@
+<html lang="pt-br">
+    <head>
+        <title> Exercise 07 - Single dimension array && Array methods </title>
+        
+        <script>
+            
+            // Example 01 = var fruits = new Array();
+            // var fruitsArray = [];
+            
+            // // To insert with "push" method
+            // fruitsArray.push("Orange");
+            // fruitsArray.push("Grape");
+            // fruitsArray.push("Apple");
+            // fruitsArray.push("Pineapple");
+            // fruitsArray.push("Banana");
+
+            // To insert manually
+            // fruitsArray[5] = "Kiwi";
+            // fruitsArray[6] = "Lemon";
+            // fruitsArray[7] = "Pitaya";
+            // fruitsArray[8] = "Peach";
+            // fruitsArray[9] = "Watermelon";
+
+            // document.write(fruitsArray[6]);
+
+            // Attention: Use the array insertion commands separatedly to avoid "vector mess"
+            // Example 02 = Medieval game itens
+            // var itemStore = ["Potion","Knife","Sword","Lantern","Power stone"];
+            // var inventory = [];
+
+            // To insert 02 "itemStore" items inside the "inventory"
+            // inventory.push(itemStore[0],itemStore[2]);
+
+            // To show all the "inventory" items - Method 01
+            // document.write(inventory);
+
+            // To insert all the "itemStore" items 
+            // inside "inventory" vector using "push" method 
+            // inventory.push(1);
+            // inventory.push(2);
+            // inventory.push(4);
+            // inventory.push(0);
+            // inventory.push(3);
+
+            // To show all the "inventory" items - Method 02 - Using 02 arrays as arguments
+            // document.write(itemStore[inventory[0]]+"<br>");
+            // document.write(itemStore[inventory[1]]+"<br>");
+            // document.write(itemStore[inventory[2]]+"<br>");
+            // document.write(itemStore[inventory[3]]+"<br>");
+            // document.write(itemStore[inventory[4]]+"<br>");
+
+            // Array methods =
+             
+            // Shift - Removes an array index from the array "start"
+            // Pop - Removes an array index from the array "end"
+            // Unshift - Adds an array index at the array "start"
+            // Push - Adds an array index at the array "end"
+            // Splice - It can remove an index from any array position
+            var studentBackpack = [];
+
+            // To use the methods =
+            // Push - Adds an array index on the array "end"
+
+            // To insert the items inside the "studentBackpack" vector
+            studentBackpack.push("Pen");
+            studentBackpack.push("Notebook");
+            studentBackpack.push("Apple");
+            studentBackpack.push("Eraser");
+            studentBackpack.push("Color pencils box");
+            studentBackpack.push("Water bottle");
+
+            // Unshift - Adds an array index at the vector "beginning"
+            // After the line 79 command, the array will receive
+            // the "Cellphone" index content in the array start.
+            studentBackpack.unshift("Cellphone");
+            
+            // Pop - Removes an array index from the array "end"
+            // With the 02 lines (Line 81 and line 82) 
+            // command, I remove the "WaterBottle" 
+            // and "Color pencils box" indexes 
+            studentBackpack.pop();
+            studentBackpack.pop();
+
+            // Shift - Removes an array index from the vector 
+            // "beginning"
+            // After the line 88 execution, the "Cellphone" index
+            // will be removed
+            studentBackpack.shift();
+
+            // Splice - It can remove 01 or more
+            // array indexes from any array position
+            // When the line 94 is executed, we will remove
+            // the chosen array index: "Apple"
+            studentBackpack.splice(2,1);
+            // Explaining the "splice" method inner arguments =
+            // 2 = Array index
+            // 1 = Number of elements to be removed
+            
+            // After the line 101 execution, the "Notebook"
+            // index will be removed, too
+            studentBackpack.splice(1,1);
+
+            document.write(studentBackpack[0]+"<br>");
+            document.write(studentBackpack[1]+"<br>");
+            document.write(studentBackpack[2]+"<br>");
+            document.write(studentBackpack[3]+"<br>");
+            document.write(studentBackpack[4]+"<br>");
+            document.write(studentBackpack[5]+"<br>");
+            document.write(studentBackpack[6]+"<br>");
+
+        </script>
+
+    </head>
+</html>
